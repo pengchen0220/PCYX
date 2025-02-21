@@ -74,12 +74,14 @@ const SignatureApp = () => {
           </button>
           <div className="saved-signatures">
             <div className="witnessby"> </div>
-            <div className="signature-grid">
-              {savedSignatures.map((sig, index) => (
-                <div key={index} className="signature-item">
-                  <img src={sig} alt={`签名 ${index + 1}`} />
-                </div>
-              ))}
+            <div className="signature-container">
+              <div className="signature-grid">
+                {savedSignatures.map((sig, index) => (
+                  <div key={index} className="signature-item">
+                    <img src={sig} alt={`签名 ${index + 1}`} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           {isPopupOpen && (

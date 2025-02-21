@@ -125,9 +125,16 @@
     background-repeat: no-repeat;
   }
   
+  .signature-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    width: 100%;
+  }
+  
   .signature-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5列 */
+    align-items: center;
     gap: 8px; /* 间距 */
   }
   
@@ -136,8 +143,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:4vw;
-    height:2vw;
+    width:100px;
+    height:50px;
   }
 
   .signature-item img {
